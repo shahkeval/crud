@@ -20,7 +20,9 @@ router.post("/add",async (req,res)=>{
     }
 });
 
-
+router.get("/", async (req, res) => {
+   res.json("WORKING") ;     
+});
 router.get("/show", async (req, res) => {
      try {
         const showAll = await User.find();
